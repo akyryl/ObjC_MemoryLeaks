@@ -1,0 +1,519 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3E95172118DC71F9002F3F09 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E95172018DC71F9002F3F09 /* Foundation.framework */; };
+		3E95172318DC71F9002F3F09 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E95172218DC71F9002F3F09 /* CoreGraphics.framework */; };
+		3E95172518DC71F9002F3F09 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E95172418DC71F9002F3F09 /* UIKit.framework */; };
+		3E95172B18DC71F9002F3F09 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3E95172918DC71F9002F3F09 /* InfoPlist.strings */; };
+		3E95172D18DC71F9002F3F09 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E95172C18DC71F9002F3F09 /* main.m */; };
+		3E95173118DC71F9002F3F09 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E95173018DC71F9002F3F09 /* AppDelegate.m */; };
+		3E95173418DC71F9002F3F09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E95173218DC71F9002F3F09 /* Main.storyboard */; };
+		3E95173718DC71F9002F3F09 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E95173618DC71F9002F3F09 /* ViewController.m */; };
+		3E95173918DC71F9002F3F09 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E95173818DC71F9002F3F09 /* Images.xcassets */; };
+		3E95174018DC71F9002F3F09 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E95173F18DC71F9002F3F09 /* XCTest.framework */; };
+		3E95174118DC71F9002F3F09 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E95172018DC71F9002F3F09 /* Foundation.framework */; };
+		3E95174218DC71F9002F3F09 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E95172418DC71F9002F3F09 /* UIKit.framework */; };
+		3E95174A18DC71F9002F3F09 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3E95174818DC71F9002F3F09 /* InfoPlist.strings */; };
+		3E95174C18DC71F9002F3F09 /* ARCMemLeaksTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E95174B18DC71F9002F3F09 /* ARCMemLeaksTests.m */; };
+		3E95175718DC727E002F3F09 /* CFLeaks.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E95175618DC727E002F3F09 /* CFLeaks.m */; };
+		3E95175B18DC8352002F3F09 /* ObjectOne.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E95175A18DC8352002F3F09 /* ObjectOne.m */; };
+		3E95175E18DC8361002F3F09 /* ObjectTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E95175D18DC8361002F3F09 /* ObjectTwo.m */; };
+		3E95176118DC8D81002F3F09 /* ObjectWithBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E95176018DC8D81002F3F09 /* ObjectWithBlock.m */; };
+		3E95176518DDD95F002F3F09 /* BridgeLeaks.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E95176418DDD95F002F3F09 /* BridgeLeaks.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3E95174318DC71F9002F3F09 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3E95171518DC71F9002F3F09 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3E95171C18DC71F9002F3F09;
+			remoteInfo = ARCMemLeaks;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3E95171D18DC71F9002F3F09 /* ARCMemLeaks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARCMemLeaks.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E95172018DC71F9002F3F09 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3E95172218DC71F9002F3F09 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3E95172418DC71F9002F3F09 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3E95172818DC71F9002F3F09 /* ARCMemLeaks-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ARCMemLeaks-Info.plist"; sourceTree = "<group>"; };
+		3E95172A18DC71F9002F3F09 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3E95172C18DC71F9002F3F09 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3E95172E18DC71F9002F3F09 /* ARCMemLeaks-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ARCMemLeaks-Prefix.pch"; sourceTree = "<group>"; };
+		3E95172F18DC71F9002F3F09 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3E95173018DC71F9002F3F09 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3E95173318DC71F9002F3F09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3E95173518DC71F9002F3F09 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3E95173618DC71F9002F3F09 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3E95173818DC71F9002F3F09 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3E95173E18DC71F9002F3F09 /* ARCMemLeaksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ARCMemLeaksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E95173F18DC71F9002F3F09 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		3E95174718DC71F9002F3F09 /* ARCMemLeaksTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ARCMemLeaksTests-Info.plist"; sourceTree = "<group>"; };
+		3E95174918DC71F9002F3F09 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3E95174B18DC71F9002F3F09 /* ARCMemLeaksTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARCMemLeaksTests.m; sourceTree = "<group>"; };
+		3E95175518DC727E002F3F09 /* CFLeaks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFLeaks.h; sourceTree = "<group>"; };
+		3E95175618DC727E002F3F09 /* CFLeaks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFLeaks.m; sourceTree = "<group>"; };
+		3E95175918DC8352002F3F09 /* ObjectOne.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectOne.h; sourceTree = "<group>"; };
+		3E95175A18DC8352002F3F09 /* ObjectOne.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjectOne.m; sourceTree = "<group>"; };
+		3E95175C18DC8361002F3F09 /* ObjectTwo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectTwo.h; sourceTree = "<group>"; };
+		3E95175D18DC8361002F3F09 /* ObjectTwo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjectTwo.m; sourceTree = "<group>"; };
+		3E95175F18DC8D81002F3F09 /* ObjectWithBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectWithBlock.h; sourceTree = "<group>"; };
+		3E95176018DC8D81002F3F09 /* ObjectWithBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjectWithBlock.m; sourceTree = "<group>"; };
+		3E95176318DDD95F002F3F09 /* BridgeLeaks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BridgeLeaks.h; sourceTree = "<group>"; };
+		3E95176418DDD95F002F3F09 /* BridgeLeaks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BridgeLeaks.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3E95171A18DC71F9002F3F09 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E95172318DC71F9002F3F09 /* CoreGraphics.framework in Frameworks */,
+				3E95172518DC71F9002F3F09 /* UIKit.framework in Frameworks */,
+				3E95172118DC71F9002F3F09 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E95173B18DC71F9002F3F09 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E95174018DC71F9002F3F09 /* XCTest.framework in Frameworks */,
+				3E95174218DC71F9002F3F09 /* UIKit.framework in Frameworks */,
+				3E95174118DC71F9002F3F09 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3E95171418DC71F9002F3F09 = {
+			isa = PBXGroup;
+			children = (
+				3E95172618DC71F9002F3F09 /* ARCMemLeaks */,
+				3E95174518DC71F9002F3F09 /* ARCMemLeaksTests */,
+				3E95171F18DC71F9002F3F09 /* Frameworks */,
+				3E95171E18DC71F9002F3F09 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3E95171E18DC71F9002F3F09 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3E95171D18DC71F9002F3F09 /* ARCMemLeaks.app */,
+				3E95173E18DC71F9002F3F09 /* ARCMemLeaksTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3E95171F18DC71F9002F3F09 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3E95172018DC71F9002F3F09 /* Foundation.framework */,
+				3E95172218DC71F9002F3F09 /* CoreGraphics.framework */,
+				3E95172418DC71F9002F3F09 /* UIKit.framework */,
+				3E95173F18DC71F9002F3F09 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3E95172618DC71F9002F3F09 /* ARCMemLeaks */ = {
+			isa = PBXGroup;
+			children = (
+				3E95176218DDD8EA002F3F09 /* MemoryLeakExamples */,
+				3E95173818DC71F9002F3F09 /* Images.xcassets */,
+				3E95172718DC71F9002F3F09 /* Supporting Files */,
+				3E95172F18DC71F9002F3F09 /* AppDelegate.h */,
+				3E95173018DC71F9002F3F09 /* AppDelegate.m */,
+				3E95173218DC71F9002F3F09 /* Main.storyboard */,
+				3E95173518DC71F9002F3F09 /* ViewController.h */,
+				3E95173618DC71F9002F3F09 /* ViewController.m */,
+			);
+			path = ARCMemLeaks;
+			sourceTree = "<group>";
+		};
+		3E95172718DC71F9002F3F09 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3E95172818DC71F9002F3F09 /* ARCMemLeaks-Info.plist */,
+				3E95172918DC71F9002F3F09 /* InfoPlist.strings */,
+				3E95172C18DC71F9002F3F09 /* main.m */,
+				3E95172E18DC71F9002F3F09 /* ARCMemLeaks-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3E95174518DC71F9002F3F09 /* ARCMemLeaksTests */ = {
+			isa = PBXGroup;
+			children = (
+				3E95174B18DC71F9002F3F09 /* ARCMemLeaksTests.m */,
+				3E95174618DC71F9002F3F09 /* Supporting Files */,
+			);
+			path = ARCMemLeaksTests;
+			sourceTree = "<group>";
+		};
+		3E95174618DC71F9002F3F09 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3E95174718DC71F9002F3F09 /* ARCMemLeaksTests-Info.plist */,
+				3E95174818DC71F9002F3F09 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3E95175818DC831B002F3F09 /* Ownership */ = {
+			isa = PBXGroup;
+			children = (
+				3E95175918DC8352002F3F09 /* ObjectOne.h */,
+				3E95175A18DC8352002F3F09 /* ObjectOne.m */,
+				3E95175C18DC8361002F3F09 /* ObjectTwo.h */,
+				3E95175D18DC8361002F3F09 /* ObjectTwo.m */,
+			);
+			name = Ownership;
+			sourceTree = "<group>";
+		};
+		3E95176218DDD8EA002F3F09 /* MemoryLeakExamples */ = {
+			isa = PBXGroup;
+			children = (
+				3E95175818DC831B002F3F09 /* Ownership */,
+				3E95175518DC727E002F3F09 /* CFLeaks.h */,
+				3E95175618DC727E002F3F09 /* CFLeaks.m */,
+				3E95175F18DC8D81002F3F09 /* ObjectWithBlock.h */,
+				3E95176018DC8D81002F3F09 /* ObjectWithBlock.m */,
+				3E95176318DDD95F002F3F09 /* BridgeLeaks.h */,
+				3E95176418DDD95F002F3F09 /* BridgeLeaks.m */,
+			);
+			name = MemoryLeakExamples;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3E95171C18DC71F9002F3F09 /* ARCMemLeaks */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E95174F18DC71F9002F3F09 /* Build configuration list for PBXNativeTarget "ARCMemLeaks" */;
+			buildPhases = (
+				3E95171918DC71F9002F3F09 /* Sources */,
+				3E95171A18DC71F9002F3F09 /* Frameworks */,
+				3E95171B18DC71F9002F3F09 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ARCMemLeaks;
+			productName = ARCMemLeaks;
+			productReference = 3E95171D18DC71F9002F3F09 /* ARCMemLeaks.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3E95173D18DC71F9002F3F09 /* ARCMemLeaksTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E95175218DC71F9002F3F09 /* Build configuration list for PBXNativeTarget "ARCMemLeaksTests" */;
+			buildPhases = (
+				3E95173A18DC71F9002F3F09 /* Sources */,
+				3E95173B18DC71F9002F3F09 /* Frameworks */,
+				3E95173C18DC71F9002F3F09 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3E95174418DC71F9002F3F09 /* PBXTargetDependency */,
+			);
+			name = ARCMemLeaksTests;
+			productName = ARCMemLeaksTests;
+			productReference = 3E95173E18DC71F9002F3F09 /* ARCMemLeaksTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3E95171518DC71F9002F3F09 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Anatolii;
+				TargetAttributes = {
+					3E95173D18DC71F9002F3F09 = {
+						TestTargetID = 3E95171C18DC71F9002F3F09;
+					};
+				};
+			};
+			buildConfigurationList = 3E95171818DC71F9002F3F09 /* Build configuration list for PBXProject "ARCMemLeaks" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3E95171418DC71F9002F3F09;
+			productRefGroup = 3E95171E18DC71F9002F3F09 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3E95171C18DC71F9002F3F09 /* ARCMemLeaks */,
+				3E95173D18DC71F9002F3F09 /* ARCMemLeaksTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3E95171B18DC71F9002F3F09 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E95173918DC71F9002F3F09 /* Images.xcassets in Resources */,
+				3E95172B18DC71F9002F3F09 /* InfoPlist.strings in Resources */,
+				3E95173418DC71F9002F3F09 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E95173C18DC71F9002F3F09 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E95174A18DC71F9002F3F09 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3E95171918DC71F9002F3F09 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E95173718DC71F9002F3F09 /* ViewController.m in Sources */,
+				3E95175718DC727E002F3F09 /* CFLeaks.m in Sources */,
+				3E95175B18DC8352002F3F09 /* ObjectOne.m in Sources */,
+				3E95175E18DC8361002F3F09 /* ObjectTwo.m in Sources */,
+				3E95173118DC71F9002F3F09 /* AppDelegate.m in Sources */,
+				3E95176518DDD95F002F3F09 /* BridgeLeaks.m in Sources */,
+				3E95176118DC8D81002F3F09 /* ObjectWithBlock.m in Sources */,
+				3E95172D18DC71F9002F3F09 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E95173A18DC71F9002F3F09 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E95174C18DC71F9002F3F09 /* ARCMemLeaksTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3E95174418DC71F9002F3F09 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3E95171C18DC71F9002F3F09 /* ARCMemLeaks */;
+			targetProxy = 3E95174318DC71F9002F3F09 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3E95172918DC71F9002F3F09 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3E95172A18DC71F9002F3F09 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3E95173218DC71F9002F3F09 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3E95173318DC71F9002F3F09 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3E95174818DC71F9002F3F09 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3E95174918DC71F9002F3F09 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3E95174D18DC71F9002F3F09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3E95174E18DC71F9002F3F09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3E95175018DC71F9002F3F09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ARCMemLeaks/ARCMemLeaks-Prefix.pch";
+				INFOPLIST_FILE = "ARCMemLeaks/ARCMemLeaks-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3E95175118DC71F9002F3F09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ARCMemLeaks/ARCMemLeaks-Prefix.pch";
+				INFOPLIST_FILE = "ARCMemLeaks/ARCMemLeaks-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		3E95175318DC71F9002F3F09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ARCMemLeaks.app/ARCMemLeaks";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ARCMemLeaks/ARCMemLeaks-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ARCMemLeaksTests/ARCMemLeaksTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		3E95175418DC71F9002F3F09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ARCMemLeaks.app/ARCMemLeaks";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ARCMemLeaks/ARCMemLeaks-Prefix.pch";
+				INFOPLIST_FILE = "ARCMemLeaksTests/ARCMemLeaksTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3E95171818DC71F9002F3F09 /* Build configuration list for PBXProject "ARCMemLeaks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E95174D18DC71F9002F3F09 /* Debug */,
+				3E95174E18DC71F9002F3F09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E95174F18DC71F9002F3F09 /* Build configuration list for PBXNativeTarget "ARCMemLeaks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E95175018DC71F9002F3F09 /* Debug */,
+				3E95175118DC71F9002F3F09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E95175218DC71F9002F3F09 /* Build configuration list for PBXNativeTarget "ARCMemLeaksTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E95175318DC71F9002F3F09 /* Debug */,
+				3E95175418DC71F9002F3F09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3E95171518DC71F9002F3F09 /* Project object */;
+}
