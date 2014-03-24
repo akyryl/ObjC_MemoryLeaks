@@ -23,7 +23,7 @@
 
     anArray = CFArrayCreate(NULL, (void *)strs, count, &kCFTypeArrayCallBacks);
     CFShow(anArray);
-    // MEMORY_LEAK: when forget to release CF created object
+    // MEMORY_LEAK with ARC & GC: when forget to release CF created object
     
     // FIX:
     // CFRelease(anArray);

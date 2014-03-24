@@ -30,7 +30,7 @@
 
     // Than we want to transfer void * pointer to object pointer
     
-    // MEMORY_LEAK: memory of allocated NSObject never be release as ovnership it not transfered
+    // MEMORY_LEAK with ARC & GC: memory of allocated NSObject never be release as ovnership not transfered
     obj2 = (__bridge NSObject *)p;
 
     // FIX: we need to transfer ovnership to obj2, so ARC can handle it

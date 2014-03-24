@@ -32,6 +32,7 @@
         {
             [NSException raise:@"Invalid object value" format:@""];
         }
+        // MEMORY_LEAK only with ARC, but GC should handle this
         // ARC does not clean this array and in case of exception it will be mem leak
         object.array = arr;
         

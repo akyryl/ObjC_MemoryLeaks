@@ -23,7 +23,7 @@
     buff[n]='\0';
 
     printf ("Random string: %s\n",buff);
-    // MEMORY_LEAK: leak if not to free buff
+    // MEMORY_LEAK with ARC & GC: leak if not to free buff
     
     // FIX: release C allocated memory manually, ARC not control this.
     // free(buff);

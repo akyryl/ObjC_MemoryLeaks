@@ -18,7 +18,7 @@
 
     self.completionBlock = ^{
 
-        // MEMORY_LEAK: retaining cycle
+        // MEMORY_LEAK with ARC: retaining cycle.  But GC should hanlde retaining cycle
         // block has strong refference on self and self has strong reference on block
         [self cleaningMethod];
 

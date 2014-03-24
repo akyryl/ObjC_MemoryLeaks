@@ -25,10 +25,11 @@
 
 - (void)leak
 {
-    // MEMORY_LEAK:
+    // MEMORY_LEAK with ARC:
     // Object two has strong reference on object one
     // and object one has strong reference on object two
-    
+    // GC shuld handle this
+
     // One of objects won't be released.
     _objectTwo.objectOne = self;
 }
