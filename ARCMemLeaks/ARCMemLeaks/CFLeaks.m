@@ -27,6 +27,8 @@
     
     // FIX:
     // CFRelease(anArray);
+    
+    // With CG it is not needed
 }
 
 - (void)leak2

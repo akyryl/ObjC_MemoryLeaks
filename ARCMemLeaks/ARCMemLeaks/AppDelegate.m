@@ -8,10 +8,13 @@
 
 #import "AppDelegate.h"
 
-#import "ObjectOne.h"
-#import "CFLeaks.h"
-#import "ObjectWithBlock.h"
 #import "BridgeLeaks.h"
+#import "CFLeaks.h"
+#import "ExceptionObject.h"
+#import "MyMalloc.h"
+#import "ObjectOne.h"
+#import "ObjectWithBlock.h"
+
 
 @implementation AppDelegate
 
@@ -41,6 +44,14 @@
     // 4
     ObjectWithBlock *objectWithBlock = [ObjectWithBlock new];
     [objectWithBlock leak];
+    
+    // 5
+    MyMalloc *myAlloc = [MyMalloc new];
+    [myAlloc leak];
+    
+    // 6
+    ExceptionObject *exceptionObject = [ExceptionObject new];
+    [exceptionObject leak];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
