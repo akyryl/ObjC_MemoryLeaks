@@ -28,6 +28,8 @@
 
 - (void)memLeakExamples
 {
+    // See leak method of each class for more details
+
     // 1
     CFLeaks *cfLeaks = [CFLeaks new];
     [cfLeaks leak1];
@@ -36,19 +38,19 @@
     // 2
     BridgeLeaks *bridgeLeaks = [BridgeLeaks new];
     [bridgeLeaks leak];
-    
+
     // 3
     ObjectOne *objectOne = [ObjectOne new];
     [objectOne leak];
-    
+
     // 4
     ObjectWithBlock *objectWithBlock = [ObjectWithBlock new];
     [objectWithBlock leak];
-    
+
     // 5
     MyMalloc *myAlloc = [MyMalloc new];
     [myAlloc leak];
-    
+
     // 6
     ExceptionObject *exceptionObject = [ExceptionObject new];
     [exceptionObject leak];
